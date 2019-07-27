@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace snake88
 {
-    class Employee : Human
+    enum Direction
     {
-        public int salary;
+        LEFT,
+        RIGHT,
+        UP,
+        DOWN
     }
 }
