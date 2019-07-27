@@ -10,20 +10,25 @@ namespace snake88
     {
         static void Main(string[] args)
         {
-           /* Point p1 = new Point(1, 3, '*');
-            p1.Draw();
+            Console.SetBufferSize(200, 49);
+          
+            HorizontalLine upline = new HorizontalLine(0, 120, 0, '+');
+            HorizontalLine downline = new HorizontalLine(0, 120, 30, '+');
+            VerticalLine leftline = new VerticalLine(0, 30, 0, '+');
+            VerticalLine rightline = new VerticalLine(0, 30, 120, '+');
+            upline.Draw();
+            downline.Draw();
+            leftline.Draw();
+            rightline.Draw();
 
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();*/
+            Point p = new Point(4, 5, '*');
+            p.Draw();
 
-            HorizontalLine line = new HorizontalLine(2, 120, 2, '+');
-            line.Draw();
-
-            VerticalLine vline = new VerticalLine(2, 30, 2, '+');
-            vline.Draw();
+            Employee e = new Employee();
+            e.age = 30;
+            e.salary = 0;
 
             Console.ReadLine();
-
         }
     }
 }
