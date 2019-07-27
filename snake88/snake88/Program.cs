@@ -10,38 +10,18 @@ namespace snake88
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*');
+           /* Point p1 = new Point(1, 3, '*');
             p1.Draw();
 
             Point p2 = new Point(4, 5, '#');
-            p2.Draw();
+            p2.Draw();*/
 
-            Console.WriteLine();
+            HorizontalLine line = new HorizontalLine(2, 120, 2, '+');
+            line.Draw();
 
-            List<int> numList = new List<int>
-            {
-                3,
-                6,
-                9
-            };
+            VerticalLine vline = new VerticalLine(2, 30, 2, '+');
+            vline.Draw();
 
-            int x = numList[ 0 ];
-            int y = numList[ 1 ];
-            int z = numList[ 2 ];
-
-            foreach(int i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            numList.RemoveAt(0);
-
-            List<Point> pointlist = new List<Point>()
-            {
-                p1,
-                p2
-            };
-            
             Console.ReadLine();
 
         }
