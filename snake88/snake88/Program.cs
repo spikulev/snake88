@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace snake88
@@ -21,9 +22,25 @@ namespace snake88
             leftline.Draw();
             rightline.Draw();
 
-            Point p = new Point(4, 5, '*');
-            Snake snake = new Snake(p, 4, Direction.DOWN);
+            Point p = new Point(2, 12, '*');
+            Snake snake = new Snake(p, 4, Direction.UP);
             snake.Draw();
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
+            snake.Move();
+            Thread.Sleep(300);
 
             Console.ReadLine();
         }
